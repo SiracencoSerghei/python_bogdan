@@ -15,3 +15,4 @@ def comments_info(*args):
 
 
 # comments_info(50, day='Monday')  # Error
+comments_info(50, 'Monday')
