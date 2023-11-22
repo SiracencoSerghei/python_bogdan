@@ -1,3 +1,12 @@
+# def my_func(*args, **kwargs):
+#     print(args)
+#     print(kwargs)
+    
+# my_func(10, True, 'ABC', key='20', name='Bogdan')
+
+
+
+
 def send_email(to, subject, *args, **kwargs):
     """
     Sends email to different recipients
@@ -18,18 +27,19 @@ def send_email(to, subject, *args, **kwargs):
 
     if kwargs:
         print("Additional details for the email:")
-        for key in list(kwargs):
-            print(f"{key}: {kwargs[key]}")
+        # for key in list(kwargs):
+        #     print(f"{key}: {kwargs[key]}")
+        for key, value in kwargs.items():
+            print(f"{key}: {value}")
 
-
-send_email('test@test.com',
-           'Hello there!')
-print('_______')
-send_email('test@test.com',
-           'Hello there!',
-           'other@test.com',
-           'someone@gmail.com')
-print('_______')
+# send_email('test@test.com',
+#            'Hello there!')
+# print('_______')
+# send_email('test@test.com',
+#            'Hello there!',
+#            'other@test.com',
+#            'someone@gmail.com')
+# print('_______')
 send_email('test@test.com',
            'Hello there!',
            bcc='bogdan@gmail.com',
@@ -41,5 +51,5 @@ send_email('test@test.com',
            'someone@gmail.com',
            bcc='bogdan@gmail.com',
            img='test.png')
-print('_______')
-send_email(True, 100, 1000)
+# print('_______')
+# send_email(True, 100, 1000)

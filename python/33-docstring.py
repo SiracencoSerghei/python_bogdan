@@ -1,3 +1,4 @@
+
 def print_number_info(num):
     """
     Returns info regarding num, whether num is even or odd
@@ -12,3 +13,5 @@ def print_number_info(num):
 
 
 print(print_number_info(21))
+
+# look also 31-args-kwargs for docstring...

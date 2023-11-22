@@ -22,5 +22,5 @@ def update_car_info(**kwargs):
         return car
         
 # Test the function
-car = update_car_info(brand='Toyota', price=25000)
-print(car)
+cars = update_car_info(brand='Toyota', price=25000)
+print(cars)

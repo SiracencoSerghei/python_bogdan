@@ -17,5 +17,8 @@ initial_post = {
 }
 
 post_with_weekday = create_new_post(initial_post)
+post_with_weekday_2 = create_new_post(post=initial_post, weekday='Monday')
 
 print(post_with_weekday)
+print(post_with_weekday_2)
+

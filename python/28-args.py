@@ -17,7 +17,7 @@
 
 
 # 3. Sorting all positional arguments in the function
-def sort_nums(*args):
+def sort_nums(*args) -> list:
     return sorted(args)
 
 

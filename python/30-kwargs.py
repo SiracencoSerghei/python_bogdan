@@ -10,7 +10,6 @@
 # def product_price_info(**product):
 #     print(product)
 
-
 # product_price_info(product_title="Bottle of water",
 #                    product_price=2, product_availability=True)
 
@@ -31,3 +30,14 @@ def product_price_info(**product):
 
 
 product_price_info(product_title="Bottle of water", product_price=2)
+
+product_price_info(**{
+    "product_title": "Bottle of water",
+    "product_price": 2
+})
+
+product_info_dict = {
+    "product_title": "Bottle of water",
+    "product_price": 2
+}
+product_price_info(**product_info_dict)
