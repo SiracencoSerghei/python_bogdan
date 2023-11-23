@@ -12,3 +12,4 @@ def process_number(num, callback_fn):
 entered_num = int(input("Enter any number: "))
 
 process_number(entered_num, print_number_info)
+
