@@ -1,4 +1,4 @@
-# 1. "if else" in the function and single return
+ # 1. "if else" in the function and single return
 def calc_discounted_price(price: float, is_member: bool):
     if is_member:
         discount = price * 0.1  # 10% discount

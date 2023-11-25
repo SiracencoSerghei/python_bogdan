@@ -1,30 +1,30 @@
 # 1. if
-def check_shipping_fee(weight):
-    if weight <= 0:
-        print("Invalid weight. Weight must be greater than zero")
+# def check_shipping_fee(weight):
+#     if weight <= 0:
+#         print("Invalid weight. Weight must be greater than zero")
 
-    if 0 < weight <= 5:
-        print("The shipping fee is 5$")
+#     if 0 < weight <= 5:
+#         print("The shipping fee is 5$")
 
-    if 5 < weight <= 15:
-        print("The shipping fee is 10$")
+#     if 5 < weight <= 15:
+#         print("The shipping fee is 10$")
 
-    if weight > 15:
-        print("The shipping fee is 20$")
+#     if weight > 15:
+#         print("The shipping fee is 20$")
 
 
-check_shipping_fee(11.5)
+# check_shipping_fee(11.5)
 
 
 # 2. if else
-def check_shipping_fee(weight):
-    if weight <= 0:
-        print("Invalid weight. Weight must be greater than zero")
-    else:
-        print("Shipping fee is 5$")
+# def check_shipping_fee(weight):
+#     if weight <= 0:
+#         print("Invalid weight. Weight must be greater than zero")
+#     else:
+#         print("Shipping fee is 5$")
 
 
-check_shipping_fee(-100)
+# check_shipping_fee(-100)
 
 
 # 3. if elif else

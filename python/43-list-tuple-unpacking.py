@@ -47,15 +47,15 @@ print(user2_username, user2_password)
 print(user3_username, user3_password)
 
 
-# 4. Error - unpacking more elements
-person = ('Bob', 25)
+# # 4. Error - unpacking more elements
+# person = ('Bob', 25)
 
-# ValueError: not enough values to unpack (expected 3, got 2)
-name, age, city = person
+# # ValueError: not enough values to unpack (expected 3, got 2)
+# name, age, city = person
 
-print(name)
-print(age)
-print(city)
+# print(name)
+# print(age)
+# print(city)
 
 
 # 5. No error
@@ -95,3 +95,15 @@ _, username, _, course_rating = comment
 
 print(username)
 print(course_rating)
+
+# 9. unpacking dict:
+user_profile = {
+    'name': 'Sergio',
+    'age': 40,
+    'comments_qty': 10,
+}
+
+def user_info(name, comments_qty,**remaining):
+    print(remaining)
+    return f"{name} has {comments_qty if comments_qty else 'no'} comments"
+print(user_info(**user_profile))

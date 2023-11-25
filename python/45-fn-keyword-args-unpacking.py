@@ -18,7 +18,7 @@ setup_db_connection(**data)
 
 
 # 2. Unpacking dictionary or list
-def create_user(username, email, password):
+def create_user(username, email, password, **kwargs):
     # Creating user...
     return {'username': username, 'email': email, 'password': password}
 
@@ -26,7 +26,8 @@ def create_user(username, email, password):
 user_details = {
     'username': 'bogdan-123',
     'email': 'bogdan@gmail.com',
-    'password': 'bogdan1341513'
+    'password': 'bogdan1341513',
+    'phone': 12345
 }
 
 created_user = create_user(**user_details)
