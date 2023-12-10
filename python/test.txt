@@ -1,0 +1,4 @@
+{
+  "name": "Bogdan",
+  "is_instructor": true
+}

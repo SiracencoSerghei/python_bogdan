@@ -3,14 +3,14 @@ import json
 # 1. list -> JSON array
 my_nums = [10, 100, 5, 20]
 my_nums_json = json.dumps(my_nums)
-print(my_nums_json)
+print('1', my_nums_json)
 print(type(my_nums_json))
 
 
 # 2. tuple -> JSON array
 my_nums = (10, 100, 5, 20)
 my_nums_json = json.dumps(my_nums)
-print(my_nums_json)
+print('2', my_nums_json)
 print(type(my_nums_json))
 
 

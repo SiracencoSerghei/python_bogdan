@@ -25,6 +25,8 @@ print("Parent directory: ", parent_dir)
 
 
 # Checking if the file is file path or dir path
+
+
 is_file = os.path.isfile(file_path)
 is_dir = os.path.isdir(directory_path)
 print(f"{file_path} is file: ", is_file)

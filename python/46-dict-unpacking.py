@@ -10,6 +10,12 @@ other_person = {
     'occupation': 'teacher'
 }
 
+new_person = {
+    **other_person
+}
+print(id(new_person) == id(other_person))
+print(new_person)
+print(other_person)
 print(person)
 print(other_person)
 print(id(person) == id(other_person))

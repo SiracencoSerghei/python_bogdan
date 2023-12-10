@@ -12,6 +12,12 @@ print(employee_name, employee_age, employee_position)
 
 # 2. Creating a new tuple
 color = (225, 128, 10)
+# new_color = (*color,)
+new_color =  tuple(list(color[:]))
+print('new_color: ', new_color)
+print(type(color))
+print(type(new_color))
+print(id(color) == id(new_color))
 
 red, green, blue = color
 print(red)
